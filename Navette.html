@@ -6,29 +6,35 @@
             name="viewport"
             content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
         >
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
         <title>Starline Project</title>
+        <link rel="stylesheet" href="./assets/css/navette.css">
         <link rel="shortcut icon" href="./assets/images/starline.png">
     </head>
     <body>
-        <header>
-            <h1><strong>STARLINE</strong></h1>
-            <nav>
-                <ul>
-                    <li><a href="" class="menu">Notre équipe</a></li>
-                    <li><a href="" class="menu">Contact</a></li>
-                    <li><a href="./home.html" class="menu">Accueil</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <h3>La Navette</h3>
-            <img src="">
-        </section>
-        <section>
-            <h3>Informations sur la Navette</h3>
-        </section>
-        <section>
-            <h3>Réservation:</h3>
-        </section>
+        <div id="page-container" class="container">
+            <header>
+                <h1><strong>STARLINE</strong></h1>
+                <nav>
+                    <ul>
+                        <li><a href="" class="menu">Notre équipe</a></li>
+                        <li><a href="" class="menu">Contact</a></li>
+                        <li><a href="./home.html" class="menu">Accueil</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section>
+                <article id="navette" class="col-12 md-5">
+                        <h3>La Navette</h3>
+                        <img src="">
+                </article>
+                <article id="informations">
+                    <h3>Informations sur la Navette</h3>
+                </article>
+            </section>
+            <section id="reservation">
+                <h3>Réservation:</h3>
+            </section>
+        </div>
     </body>
 </html>
