@@ -8,61 +8,67 @@
         >
         <title>Starline Project</title>
         <link rel="shortcut icon" href="./assets/images/starline.png">
+        <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./assets/css/styles.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1><strong>STARLINE</strong></h1>
-            <nav>
-                <ul>
-                    <li><a href="" class="menu">Notre équipe</a></li>
-                    <li><a href="" class="menu">Contact</a></li>
-                    <li><a href="./home.html" class="menu">Accueil</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div id="carousel">
+        <div class="container-md">
+            <header class="row">
+                <h3 class="title"><strong>STARLINE</strong></h3>
+                <nav>
+                    <ul>
+                        <li><a href="" class="menu">Notre équipe</a></li>
+                        <li><a href="" class="menu">Contact</a></li>
+                        <li><a href="./home.html" class="menu">Accueil</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="row">
+                <div id="carousel">
 
+                </div>
+                <div id="formulaire_res">
+                    <h3>
+                        Réservations
+                    </h3>
+                </div>
+                <ul id="formules">
+                    <li id="navette1">
+                        <h3>
+                            Transport Navette
+                        </h3>
+                        <a href="./Navette.html">Informations et réservation</a>
+                        <div id="tarif">
+                            Tarif
+                        </div>
+                    </li>
+                    <li id="teleportation">
+                        <h3>
+                            La téléportation
+                        </h3>
+                        <a href="./teleportation.html">Informations et réservation</a>
+                        <div id="tarif">
+                            Tarif
+                        </div>
+                    </li>
+                    <li id="croisiere">
+                        <h3>
+                            Croisière Galactique
+                        </h3>
+                        <a href="./croisiere.html">Informations et réservation</a>
+                        <div id="tarif">
+                            Tarif
+                        </div>
+                    </li>
+                </ul>
+            </main>
+        
+            <footer>
+                <nav id="liens">
+                    Liens externes
+                </nav>
+                &copy; Copyright
+            </footer>
         </div>
-        <div id="formulaire_res">
-            <h3>
-                Réservations
-            </h3>
-        </div>
-        <ul id="formules">
-            <li id="navette1">
-                <h3>
-                    Transport Navette
-                </h3>
-                <a href="./Navette.html">Informations et réservation</a>
-                <div id="tarif">
-                    tarif
-                </div>
-            </li>
-            <li id="teleportation">
-                <h3>
-                    La téléportation
-                </h3>
-                <a href="./teleportation.html">Informations et réservation</a>
-                <div id="tarif">
-                    tarif
-                </div>
-            </li>
-            <li id="croisiere">
-                <h3>
-                    Croisière Galactique
-                </h3>
-                <a href="./croisiere.html">Informations et réservation</a>
-                <div id="tarif">
-                    tarif
-                </div>
-            </li>
-        </ul>
-       
-        <footer>
-            <nav id="liens">
-                Liens externes
-            </nav>
-            &copy; Copyright
-        </footer>
     </body>
 </html>
