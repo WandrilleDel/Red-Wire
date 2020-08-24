@@ -1,8 +1,4 @@
 .vscode
 
-<<<<<<< HEAD
 #Exclude node dependencies
-=======
-# Exclude node dependencies
->>>>>>> c59e87e8700ab50a9ec452154a91510644e45154
 node_modules
