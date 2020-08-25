@@ -63,7 +63,6 @@ body{
     display: block;
     width: 30%;
     text-align: justify;
-
 }
 
 #croisiere{
@@ -93,4 +92,9 @@ h3.titre-transport{
 }
 #croisiere:hover{
     transform: scale(1.025, 1.025);
+}
+
+.reservation{
+    display: block;
+    margin-top: .5em;
 }
