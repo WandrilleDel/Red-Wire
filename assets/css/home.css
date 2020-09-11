@@ -55,6 +55,7 @@ h3.title{
     list-style-type: none;
     word-break: break-word;
     text-align: center;
+    color: white;
 }
 
 #navette1{
@@ -103,4 +104,8 @@ h3.titre-transport{
 .reservation{
     display: block;
     margin-top: .5em;
+}
+
+.sign-form{
+    margin: 10px;
 }
