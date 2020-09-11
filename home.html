@@ -27,12 +27,45 @@
                 <div id="carousel">
 
                 </div>
+                <div id="inscription">
+                    <button type="button" onclick="window.location.href ='./inscription.html';" class="btn btn-outline-primary">Inscription</button>
+                </div>
 
                 <!-- Module réservations et présentation options -->
                 <div id="formulaire_res">
                     <h3>
                         Réservations
                     </h3>
+                    <form>
+                        <div class="form-row">
+                          <div class="col-3">
+                            <label>Date du voyage :</label>
+                            <input type="date" class="form-control">
+                          </div>
+                          <div class="col-3"> 
+                            <label>Nombre de place :</label>
+                            <input type="number" class="form-control" required/>
+                          </div>
+                          <div class="col-3">
+                            <label>Votre destination :</label>
+                            <select name="planete" class="form-control" id="planete" required>
+                              <option value="destination">Votre choix ...</option>
+                              <option value="mercure">Mercure</option>
+                              <option value="venus">Vénus</option>
+                              <option value="mars">Mars</option>
+                              <option value="jupiter">Jupiter</option>
+                              <option value="saturne">Saturne</option>
+                              <option value="uranus">Uranus</option>
+                              <option value="neptune">Neptune</option>
+                              <option value="terre">Terre</option>
+                          </select>
+                        </div>
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary md-2">Envoyer</button>
+                          </div>
+                          </div>
+                        </div>
+                    </form>
                 </div>
                 <ul id="formules" class="row">
                     <li id="navette1" class="transport col-12 col-md-3">

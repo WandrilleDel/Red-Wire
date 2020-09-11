@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+            <link rel="stylesheet" href="./style.css">
+        </head>
+        <body>
+        <form method="POST" action="traitement.php">
+            <p>
+                <fieldset>
+                <label>Nom : </label>
+                <input type="text" name="nom" id="nom" placeholder="Votre nom" required/><br/>
+                <label>Prénom : </label>
+                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required/><br/>
+                <label>Email : </label>
+                <input type="email" placeholder="Votre Email" required/><br/>
+                <label>Téléphone : </label>
+                <input type="tel" placeholder="Votre n° de téléphone"/><br/>
+                <label>Adulte : </label>
+                <input type="number" required/><br/>
+                <label>Enfant : </label>
+                <input type="number"required/><br/>
+                <label>Date : </label>
+                <input type="date"required/><br/>
+                <label for="planete">Départ :</label>
+                <select name="planete" id="planete" required>
+                    <option value="destination">Votre choix ...</option>
+                    <option value="mercure">Mercure</option>
+                    <option value="venus">Vénus</option>
+                    <option value="mars">Mars</option>
+                    <option value="jupiter">Jupiter</option>
+                    <option value="saturne">Saturne</option>
+                    <option value="uranus">Uranus</option>
+                    <option value="neptune">Neptune</option>
+                    <option value="terre">Terre</option>
+                </select><br/>
+                <label for="planete">Destination :</label>
+                <select name="planete" id="planete" required>
+                    <option value="destination">Votre choix ...</option>
+                    <option value="mercure">Mercure</option>
+                    <option value="venus">Vénus</option>
+                    <option value="mars">Mars</option>
+                    <option value="jupiter">Jupiter</option>
+                    <option value="saturne">Saturne</option>
+                    <option value="uranus">Uranus</option>
+                    <option value="neptune">Neptune</option>
+                    <option value="terre">Terre</option>
+                </select><br/>
+                <input class="btn btn-primary" type="submit" value="Envoyer"/>
+                </fieldset>
+            </p>
+        </form>
+        </body>
+
+    </html>
