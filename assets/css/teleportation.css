@@ -1,17 +1,11 @@
 body{
-    background-position: fixed;
-    background-color: rgba(13, 26, 31, 0.9);
+    background-position:fixed;
     height: 100%;
-    background-image:url("https://cdn.gamer-network.net/2014/usgamer/Normandy-2.jpg/EG11/thumbnail/1920x1080/format/jpg/quality/75/whats-the-best-video-game-spaceship.jpg");
-
+    background-image:url("https://vistapointe.net/images/stargate-5.jpg");
+    background-repeat:no-repeat;
+    background-size:100%;
 }
 
-#navette{
-    margin-top: 50px;
-    text-align: center;
-    color: rgb(218, 158, 47);
-    font-family: monospace;
-}
 #informations{
     text-align: center;
     color: rgb(218, 158, 47);
