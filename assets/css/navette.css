@@ -2,6 +2,7 @@ body{
     background-position: fixed;
     background-color: rgba(13, 26, 31, 0.9);
     background-size: 100%;
+    background-image:url("https://cdn.gamer-network.net/2014/usgamer/Normandy-2.jpg/EG11/thumbnail/1920x1080/format/jpg/quality/75/whats-the-best-video-game-spaceship.jpg");
 }
 
 
@@ -21,4 +22,20 @@ body{
     text-align: center;
     color: rgb(218, 158, 47);
     font-family: monospace;
+}
+
+h3.title{
+    font-size: 40px;
+    text-shadow: 2px 2px 5px orange;
+    font-family: 'Lucida Handwriting';
+}
+
+.navigation li{
+    font-family: 'Franklin Gothic Medium';
+    border: solid 1px black;
+    background-color: var(--primary);
+    border-radius: 25px;
+    margin: .5em;
+    width: 130px;
+    text-align: center;
 }
