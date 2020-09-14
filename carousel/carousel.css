@@ -58,8 +58,6 @@ body {
     overflow: hidden;
 }
 
-
-
 .carousel__container {
     transition: transform .3s;
     transform: translateZ(0);
