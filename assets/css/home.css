@@ -19,15 +19,25 @@ body{
     padding: .5em;
     background-image: url(background.jpg);
     background-position-x: center;
+    background-attachment: fixed;
+}
+
+.btn-login{
+    padding: .5em;
+}
+
+.btn-sign{
+    padding: .5em;
 }
 
 .head-title{
     color: white;
 }
+
 h3.title{
     font-size: 40px;
     text-shadow: 2px 2px 5px orange;
-    font-family: 'Lucida Handwriting';
+    font-family: 'Emblema One';
 }
 
 .navigation li{
@@ -49,6 +59,8 @@ h3.title{
 }
 
 #formules{
+    background-color: rgba(20, 20, 20, 0.4);
+    border-radius: 25px;
     text-decoration: none;
     list-style-type: none;
     word-break: break-word;
