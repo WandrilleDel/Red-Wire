@@ -15,15 +15,12 @@
 }
 
 body{
-    margin: 1em;
+    margin: .5em;
     padding: .5em;
     background-image: url(background.jpg);
 }
 
-.container-md{
-    background-color: rgba(24, 23, 23, 0.5);
-    border: solid .5px black;
-    box-shadow: 5px 5px 5px black;
+.head-title{
     color: white;
 }
 h3.title{
@@ -84,7 +81,7 @@ h3.titre-transport{
 }
 
 .transport{
-    border: solid .5px black;
+    border: solid .5px white;
     padding: .5em;
     box-shadow: 5px 5px 5px grey;
     border-radius: 25px;
@@ -113,4 +110,8 @@ h3.titre-transport{
 #boutonEnvoyer {
     top: 12px;
     margin-top: 20px;
+}
+
+footer{
+    color: white;
 }
