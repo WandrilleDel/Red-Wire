@@ -12,12 +12,23 @@
         <link href="./assets/css/home.css" rel="stylesheet">
         <script src="./carousel/carousel.js"></script>
         <link rel="stylesheet" href="./carousel/carousel.css">
-        <button type="button" onclick="window.location.href ='./login.html';" class="btn btn-outline-secondary">Connexion</button>
         <link href='https://fonts.googleapis.com/css?family=Emblema One' rel='stylesheet'>
     </head>
     <body>
         <div class="container-fluid head-title">
             <header>
+
+                <!-- Boutons inscription/login -->
+                <div class="row">
+                    <div class="form-group btn-login">
+                        <button type="button" onclick="window.location.href ='./login.html';" class="btn btn-outline-secondary">Connexion</button>
+                    </div>
+            
+                    <div id="inscription" class="form-group btn-sign">
+                        <button type="button" onclick="window.location.href ='./inscription.html';" class="btn btn-outline-primary">Inscription</button>
+                    </div>
+                </div>
+
                 <h3 class="title"><strong>STARLINE</strong></h3>
                 <nav>
                     <ul class="row nav navigation">
@@ -28,76 +39,89 @@
                 </nav>
             </header>
             <main>
-                <div class="container">
-                        <div id="carousel3">
-                            <div class="item">
-                                <div class="item__image">
-                                    <img src="./assets/images/background.jpg" alt="">
+
+                <!-- Début carousel -->
+                <section>
+                    <div class="container">
+                            <div id="carousel3">
+                                <div class="item">
+                                    <div class="item__image">
+                                        <img src="./assets/images/background.jpg" alt="">
+                                    </div>
+                                    <div class="item__body">
+                                        <div class="item__title">Mon titre 1 </div>
+                                        <div class="item__description">Ici une petite description pour tester le carousel </div>
+                                    </div>
                                 </div>
-                                <div class="item__body">
-                                    <div class="item__title">Mon titre 1 </div>
-                                    <div class="item__description">Ici une petite description pour tester le carousel </div>
+                                <div class="item">
+                                    <div class="item__image">
+                                        <img src="./assets/images/Spaceship.jpg" alt="">
+                                    </div>
+                                    <div class="item__body">
+                                        <div class="item__title">Mon titre 2 </div>
+                                        <div class="item__description">Ici une petite description pour tester le carousel </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="item__image">
-                                    <img src="./assets/images/starline.png" alt="">
+                                <div class="item">
+                                    <div class="item__image">
+                                        <img src="./assets/images/Space Portal.jpg" alt="">
+                                    </div>
+                                    <div class="item__body">
+                                        <div class="item__title">Mon titre 3 </div>
+                                        <div class="item__description">Ici une petite description pour tester le carousel </div>
+                                    </div>
                                 </div>
-                                <div class="item__body">
-                                    <div class="item__title">Mon titre 2 </div>
-                                    <div class="item__description">Ici une petite description pour tester le carousel </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item__image">
-                                    <img src="./assets/images/systemeSolaire.jpg" alt="">
-                                </div>
-                                <div class="item__body">
-                                    <div class="item__title">Mon titre 3 </div>
-                                    <div class="item__description">Ici une petite description pour tester le carousel </div>
-                                </div>
+                                <div class="item">
+                                        <div class="item__image">
+                                            <img src="./assets/images/Spaceship v2.jpg" alt="">
+                                        </div>
+                                        <div class="item__body">
+                                            <div class="item__title">Mon titre 4 </div>
+                                            <div class="item__description">Ici une petite description pour tester le carousel </div>
+                                        </div>
                             </div>
                         </div>
-                    </div>
-                <div id="inscription">
-                    <button type="button" onclick="window.location.href ='./inscription.html';" class="btn btn-outline-primary">Inscription</button>
-                </div>
+                    </section>
+                    <!-- Fin carousel -->
+
 
                 <!-- Module réservations et présentation options -->
-                <div id="formulaire_res">
-                    <h3>
-                        Réservations
-                    </h3>
-                    <form>
-                        <div class="form-row sign-form">
-                          <div class="col-3">
-                            <label>Date du voyage :</label>
-                            <input type="date" class="form-control">
-                          </div>
-                          <div class="col-3"> 
-                            <label>Nombre de place :</label>
-                            <input type="number" class="form-control" required/>
-                          </div>
-                          <div class="col-3">
-                            <label>Votre destination :</label>
-                            <select name="planete" class="form-control" id="planete" required>
-                              <option value="destination">Votre choix ...</option>
-                              <option value="mercure">Mercure</option>
-                              <option value="venus">Vénus</option>
-                              <option value="mars">Mars</option>
-                              <option value="jupiter">Jupiter</option>
-                              <option value="saturne">Saturne</option>
-                              <option value="uranus">Uranus</option>
-                              <option value="neptune">Neptune</option>
-                              <option value="terre">Terre</option>
-                          </select>
-                        </div>
-                          <div class="col-auto" id="boutonEnvoyer">
-                            <button type="submit" class="btn btn-primary md-2">Envoyer</button>
-                          </div>
-                          </div>
-                        </div>
-                    </form>
+                <div class="container-fluid">
+                    <div id="formulaire_res">
+                        <h3>
+                            Réservations
+                        </h3>
+                        <form>
+                            <div class="form-row sign-form">
+                            <div class="col-3">
+                                <label>Date du voyage :</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-3"> 
+                                <label>Nombre de place :</label>
+                                <input type="number" class="form-control" required/>
+                            </div>
+                            <div class="col-3">
+                                <label>Votre destination :</label>
+                                <select name="planete" class="form-control" id="planete" required>
+                                <option value="destination">Votre choix ...</option>
+                                <option value="mercure">Mercure</option>
+                                <option value="venus">Vénus</option>
+                                <option value="mars">Mars</option>
+                                <option value="jupiter">Jupiter</option>
+                                <option value="saturne">Saturne</option>
+                                <option value="uranus">Uranus</option>
+                                <option value="neptune">Neptune</option>
+                                <option value="terre">Terre</option>
+                            </select>
+                            </div>
+                            <div class="col-auto" id="boutonEnvoyer">
+                                <button type="submit" class="btn btn-primary md-2">Envoyer</button>
+                            </div>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
                 <!-- Petite présentation des formules -->
@@ -138,6 +162,7 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Fin description formules -->
             </main>
         
             <footer>
