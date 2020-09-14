@@ -10,6 +10,8 @@
         <link rel="shortcut icon" href="./assets/images/starline.png">
         <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="./assets/css/home.css" rel="stylesheet">
+        <script src="./carousel/carousel.js"></script>
+        <link rel="stylesheet" href="./carousel/carousel.css">
         <button type="button" onclick="window.location.href ='./login.html';" class="btn btn-outline-secondary">Connexion</button>
     </head>
     <body>
@@ -25,9 +27,38 @@
                 </nav>
             </header>
             <main>
-                <div id="carousel">
-
-                </div>
+                <div class="container">
+                    <div class="title">Carousel infini</div>
+                        <div id="carousel3">
+                            <div class="item">
+                                <div class="item__image">
+                                    <img src="./assets/images/background.jpg" alt="">
+                                </div>
+                                <div class="item__body">
+                                    <div class="item__title">Mon titre 1 </div>
+                                    <div class="item__description">Ici une petite description pour tester le carousel </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__image">
+                                    <img src="./assets/images/starline.png" alt="">
+                                </div>
+                                <div class="item__body">
+                                    <div class="item__title">Mon titre 2 </div>
+                                    <div class="item__description">Ici une petite description pour tester le carousel </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__image">
+                                    <img src="./assets/images/systemeSolaire.jpg" alt="">
+                                </div>
+                                <div class="item__body">
+                                    <div class="item__title">Mon titre 3 </div>
+                                    <div class="item__description">Ici une petite description pour tester le carousel </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 <div id="inscription">
                     <button type="button" onclick="window.location.href ='./inscription.html';" class="btn btn-outline-primary">Inscription</button>
                 </div>
@@ -116,5 +147,6 @@
                 &copy; Copyright
             </footer>
         </div>
+        
     </body>
 </html>
