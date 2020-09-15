@@ -67,6 +67,10 @@ h3.title{
     margin-bottom: 20px;
 }
 
+.label-align{
+    padding-top: .5em;
+}
+
 #formules{
     background-color: rgba(20, 20, 20, 0.4);
     border-radius: 25px;
