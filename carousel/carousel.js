@@ -56,9 +56,16 @@ class Carousel {
         })
         this.setStyle()
         this.createNavigation()
+        
+    
 
 
         //Evennements
+        setInterval((item) => {
+            this.next(item)
+        }, 3000)
+        document.querySelector("#carousel3").addEventListener("mouseover", function(){this.clearInterval(Carousel)})
+       
         this.moveCallBacks.forEach(cb => cb(0))
         this.onWindowResize()
         window.addEventListener('resize', this.onWindowResize.bind(this))
@@ -87,9 +94,6 @@ class Carousel {
         this.root.appendChild(prevButton)
         nextButton.addEventListener('click', this.next.bind(this))
         prevButton.addEventListener('click', this.prev.bind(this))
-        setTimeout((item) => {
-            this.next(item)
-        }, 3000);
         if (this.options.loop === true) {
             return
         }
@@ -128,9 +132,6 @@ class Carousel {
 
 
     gotoItem(index) {
-        setTimeout((item) => {
-            this.next(item)
-        }, 3000);
         if (index < 0) {
             if (this.options.loop) {
                 index = this.items.length - this.slidesVisible
