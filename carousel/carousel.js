@@ -60,12 +60,18 @@ class Carousel {
     
 
 
-        //Evennements
-        setInterval((item) => {
+        //Evennements    
+        const autoCar=  setInterval((item) => {
             this.next(item)
-        }, 3000)
-        document.querySelector("#carousel3").addEventListener("mouseover", function(){this.clearInterval(Carousel)})
-       
+        }, 3000);
+        const car=document.querySelector("#carousel3")
+           car.addEventListener("mouseover", function(){
+            clearInterval(autoCar)})
+            
+            car.addEventListener("mouseout", function(){setInterval(autoCar)})
+
+        //this.stopAutoCar
+        // console.log(this.stopAutoCar)
         this.moveCallBacks.forEach(cb => cb(0))
         this.onWindowResize()
         window.addEventListener('resize', this.onWindowResize.bind(this))
@@ -81,6 +87,10 @@ class Carousel {
     /**
      * applique les bonnes dimensions au carousel
      */
+
+   
+
+    
     setStyle() {
         let ratio = this.items.length / this.slidesVisible
         this.container.style.width = (ratio * 100) + "%"
@@ -150,6 +160,7 @@ class Carousel {
         this.container.style.transform = 'translate3d(' + translateX + '%, 0, 0)'
         this.currentItem = index
         this.moveCallBacks.forEach(cb => cb(index))
+        
     }
 
 
