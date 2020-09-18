@@ -1,0 +1,36 @@
+#boutonEnvoyer {
+    top: 12px;
+    margin-top: 20px;
+}
+
+form div {
+    margin: auto;
+}
+
+.form-row {
+    min-width: 520px;
+}
+
+.nombreDePlace {
+	width: 40px;
+    height: 40px;
+	border-radius: 20px;
+	text-align: center;
+}
+
+div .col-3 {
+	text-align: center;
+}
+
+.signeMoins {
+    width: 30px;
+    height: 30px;
+	border-radius:12px 0 12px 0;
+}
+
+.signePlus {
+    width: 30px;
+    height: 30px;
+    border-radius: 0 12px 0 12px;
+}
+
