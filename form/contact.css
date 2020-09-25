@@ -1,0 +1,33 @@
+body{
+    background-color: rgba(13, 26, 31, 0.9);
+    color:white;
+    background-image:url("../assets/images/fondEcranTransports.png");
+    max-width: 1170px;
+    margin: auto;
+    padding: 0;
+}
+
+.form-control{
+    width:1000px;
+    height:50px;
+    padding:2;
+    margin:2em;
+}
+
+#messageArea{
+    height:200px;
+    margin:48px;
+    font-size:1.5em;
+}
+
+button{
+    height:30px;
+    position:relative;
+    font-family:'Emblema One';
+    left:42%;
+    font-size:1.6em;
+}
+
+input{
+    font-size:1.5em;
+}
