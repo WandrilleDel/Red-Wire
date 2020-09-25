@@ -21,6 +21,14 @@ body{
     background-position-x: center;
     background-attachment: fixed;
 }
+.carousel-cell{
+   height: 550px;
+}
+img{
+    height: auto;
+    width: auto;
+}
+
 
 .btn-login{
     padding: .5em;
