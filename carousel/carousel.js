@@ -4,7 +4,8 @@ var flkty = new Flickity( elem, {
   // options
   cellAlign: 'left',
   contain: true,
-  autoPlay: true
+  autoPlay: true,
+  wrapAround: true,
 });
 
 // element argument can be a selector string
