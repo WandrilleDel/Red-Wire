@@ -21,7 +21,17 @@ body{
     background-position-x: center;
     background-attachment: fixed;
 }
-
+.carousel-cell{
+   height: 500px;
+   width:100%;
+   margin-right: 10px;
+   
+}
+img{
+    height: 500px;
+    width: 100%;
+    border-radius: 1em;
+}
 .btn-login{
     padding: .5em;
 }
@@ -133,11 +143,21 @@ h3.titre-transport{
     margin: 10px;
 }
 
-#boutonEnvoyer {
-    top: 12px;
-    margin-top: 20px;
-}
-
 footer{
     color: white;
 }
+.flickity-page-dots {
+    bottom: 0px;
+  }
+  /* white circles */
+  .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+  }
+  /* fill-in selected dot */
+  .flickity-page-dots .dot.is-selected {
+    background: white;
+  }

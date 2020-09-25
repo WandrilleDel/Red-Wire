@@ -2,54 +2,82 @@
     <html>
         <head>
             <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-            <link rel="stylesheet" href="./style.css">
+            <link rel="stylesheet" href="./form/form.css">
         </head>
         <body>
         <form method="POST" action="traitement.php">
             <p>
                 <fieldset>
-                <label>Nom : </label>
-                <input type="text" name="nom" id="nom" placeholder="Votre nom" required/><br/>
-                <label>Prénom : </label>
-                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required/><br/>
-                <label>Email : </label>
-                <input type="email" placeholder="Votre Email" required/><br/>
-                <label>Téléphone : </label>
-                <input type="tel" placeholder="Votre n° de téléphone"/><br/>
-                <label>Adulte : </label>
-                <input type="number" required/><br/>
-                <label>Enfant : </label>
-                <input type="number"required/><br/>
-                <label>Date : </label>
-                <input type="date"required/><br/>
-                <label for="planete">Départ :</label>
-                <select name="planete" id="planete" required>
-                    <option value="destination">Votre choix ...</option>
-                    <option value="mercure">Mercure</option>
-                    <option value="venus">Vénus</option>
-                    <option value="mars">Mars</option>
-                    <option value="jupiter">Jupiter</option>
-                    <option value="saturne">Saturne</option>
-                    <option value="uranus">Uranus</option>
-                    <option value="neptune">Neptune</option>
-                    <option value="terre">Terre</option>
-                </select><br/>
-                <label for="planete">Destination :</label>
-                <select name="planete" id="planete" required>
-                    <option value="destination">Votre choix ...</option>
-                    <option value="mercure">Mercure</option>
-                    <option value="venus">Vénus</option>
-                    <option value="mars">Mars</option>
-                    <option value="jupiter">Jupiter</option>
-                    <option value="saturne">Saturne</option>
-                    <option value="uranus">Uranus</option>
-                    <option value="neptune">Neptune</option>
-                    <option value="terre">Terre</option>
-                </select><br/>
-                <input class="btn btn-primary" type="submit" value="Envoyer"/>
+                    <div class="col-md-3 mb-3">
+                        <label>Nom : </label>
+                            <input type="text" name="nom" id="nom" class="form-control" placeholder="Votre nom" required/><br/>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label>Prénom : </label>
+                            <input type="text" name="prenom" class="form-control" id="prenom" placeholder="Votre prénom" required/><br/>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label>Email : </label>
+                            <input type="email" class="form-control" placeholder="Votre Email" required/><br/>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label>Téléphone : </label>
+                            <input type="tel" class="form-control" placeholder="Votre n° de téléphone"/><br/>
+                    </div>
+                    <div class="col-md-3 mb-3" style="text-align:center"> 
+                        <label>Adultes :</label>
+                        <div style="text-align:center">
+                            <input type="button" value="-" id="moins" class="signeMoins" onClick="modifier(-1)"> 
+                            <input type="text" id="text" class="nombreDePlace" value="1" size="5" readonly="true">
+                            <input type="button" value="+" id="plus" class="signePlus" onClick="modifier(1)">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3" style="text-align:center">
+                        <label>Enfants :</label>
+                        <div style="text-align:center">
+                            <input type="button" value="-" id="moins1" class="signeMoins" onClick="modifier1(-1)"> 
+                            <input type="text" id="text1" class="nombreDePlace" value="1" size="5" readonly="true">
+                            <input type="button" value="+" id="plus1" class="signePlus" onClick="modifier1(1)">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label>Date : </label>
+                            <input type="date" class="form-control" required/><br/>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="planete">Départ :</label>
+                            <select name="planete" id="planete" class="custom-select" required>
+                                <option value="destination">Votre choix ...</option>
+                                <option value="mercure">Mercure</option>
+                                <option value="venus">Vénus</option>
+                                <option value="mars">Mars</option>
+                                <option value="jupiter">Jupiter</option>
+                                <option value="saturne">Saturne</option>
+                                <option value="uranus">Uranus</option>
+                                <option value="neptune">Neptune</option>
+                                <option value="terre">Terre</option>
+                            </select><br/>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="planete">Destination :</label>
+                            <select name="planete" id="planete" class="custom-select" required>
+                                <option value="destination">Votre choix ...</option>
+                                <option value="mercure">Mercure</option>
+                                <option value="venus">Vénus</option>
+                                <option value="mars">Mars</option>
+                                <option value="jupiter">Jupiter</option>
+                                <option value="saturne">Saturne</option>
+                                <option value="uranus">Uranus</option>
+                                <option value="neptune">Neptune</option>
+                                <option value="terre">Terre</option>
+                            </select><br/>
+                    </div>
+                    <div class="col-md-3 mb-3" style="text-align:center">
+                        <button type="button" class="btn btn-outline-primary btn-rounded waves-effect">Envoyer</button>
                 </fieldset>
             </p>
         </form>
+        <script src="./form/form.js"></script>
         </body>
 
     </html>

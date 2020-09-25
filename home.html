@@ -10,9 +10,12 @@
         <link rel="shortcut icon" href="./assets/images/starline.png">
         <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="./assets/css/home.css" rel="stylesheet">
-        <script src="./carousel/carousel.js"></script>
-        <link rel="stylesheet" href="./carousel/carousel.css">
+       
+        <!-- CSS carousel -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">   
+    
         <link href='https://fonts.googleapis.com/css?family=Emblema One' rel='stylesheet'>
+        <link href="./form/form.css" rel="stylesheet">
     </head>
     <body>
         <div class="container-fluid head-title">
@@ -43,45 +46,14 @@
                 <!-- Début carousel -->
                 <section>
                     <div class="container">
-                            <div id="carousel3">
-                                <div class="item">
-                                    <div class="item__image">
-                                        <img src="./assets/images/background.jpg" alt="">
-                                    </div>
-                                    <div class="item__body">
-                                        <div class="item__title">Mon titre 1 </div>
-                                        <div class="item__description">Ici une petite description pour tester le carousel </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__image">
-                                        <img src="./assets/images/Spaceship.jpg" alt="">
-                                    </div>
-                                    <div class="item__body">
-                                        <div class="item__title">Mon titre 2 </div>
-                                        <div class="item__description">Ici une petite description pour tester le carousel </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__image">
-                                        <img src="./assets/images/Space Portal.jpg" alt="">
-                                    </div>
-                                    <div class="item__body">
-                                        <div class="item__title">Mon titre 3 </div>
-                                        <div class="item__description">Ici une petite description pour tester le carousel </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                        <div class="item__image">
-                                            <img src="./assets/images/Spaceship v2.jpg" alt="">
-                                        </div>
-                                        <div class="item__body">
-                                            <div class="item__title">Mon titre 4 </div>
-                                            <div class="item__description">Ici une petite description pour tester le carousel </div>
-                                        </div>
-                            </div>
-                        </div>
-                    </section>
+                        <div class="carousel-cell"><img src="./assets/images/Space Portal.jpg" alt=""></div>
+                        <div class="carousel-cell"><img src="https://i.redd.it/9jvqtdt6lus21.jpg" alt=""></div>
+                        <div class="carousel-cell"><img src="./assets/images/Spaceship.jpg" alt=""></div>
+                        <div class="carousel-cell"><img src="./assets/images/systemeSolaire.jpg" alt=""></div>
+                        <div class="carousel-cell"><img src="https://cdn.gamer-network.net/2014/usgamer/Normandy-2.jpg/EG11/thumbnail/1920x1080/format/jpg/quality/75/whats-the-best-video-game-spaceship.jpg" alt=""></div>
+                      </div>
+                       
+                </section>
                     <!-- Fin carousel -->
 
 
@@ -92,35 +64,40 @@
                             Réservations
                         </h3>
                         <form>
-                            <div class="form-row sign-form">
-                            <div class="col-12 col-md-3">
-                                <label class="label-align">Date du voyage :</label>
+                            <div class="form-row">
+                              <div class="col-3">
+                                <label>Date du voyage :</label>
                                 <input type="date" class="form-control">
-                            </div>
-                            <div class="col-12 col-md-3"> 
-                                <label class="label-align">Nombre de place :</label>
-                                <input type="number" class="form-control" required/>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <label class="label-align">Votre destination :</label>
+                              </div>
+                              <div class="col-3"> 
+                                <label>Nombre de place :</label>
+                                <div style="text-align:center">
+                                    <input type="button" value="-" id="moins" onClick="modifier(-1)"> 
+                                    <input type="text" id="text" class="nombreDePlace" value="1" size="5" readonly="true">
+                                    <input type="button" value="+" id="plus" onClick="modifier(1)">
+                                </div>
+                              </div>
+                              <div class="col-3">
+                                <label>Votre destination :</label>
                                 <select name="planete" class="form-control" id="planete" required>
-                                <option value="destination">Votre choix ...</option>
-                                <option value="mercure">Mercure</option>
-                                <option value="venus">Vénus</option>
-                                <option value="mars">Mars</option>
-                                <option value="jupiter">Jupiter</option>
-                                <option value="saturne">Saturne</option>
-                                <option value="uranus">Uranus</option>
-                                <option value="neptune">Neptune</option>
-                                <option value="terre">Terre</option>
-                            </select>
+                                  <option value="destination">Votre choix ...</option>
+                                  <option value="mercure">Mercure</option>
+                                  <option value="venus">Vénus</option>
+                                  <option value="mars">Mars</option>
+                                  <option value="jupiter">Jupiter</option>
+                                  <option value="saturne">Saturne</option>
+                                  <option value="uranus">Uranus</option>
+                                  <option value="neptune">Neptune</option>
+                                  <option value="terre">Terre</option>
+                              </select>
                             </div>
-                            <div class="col-auto" id="boutonEnvoyer">
-                                <button type="submit" class="btn btn-primary md-2">Envoyer</button>
+                              <div class="col-auto" id="boutonEnvoyer">
+                                <input type="button" value="Envoyer" onclick="click()">
+                              </div>
+                              </div>
                             </div>
-                            </div>
-                            </div>
-                        </form>
+                          </form>
+                              <script src="./form/form.js"></script>
                     </div>
                 </div>
 
@@ -172,6 +149,8 @@
                 &copy; Copyright
             </footer>
         </div>
-        
+         <!-- JS carousel -->
+         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+         <script src="./carousel/carousel.js"></script>
     </body>
 </html>
