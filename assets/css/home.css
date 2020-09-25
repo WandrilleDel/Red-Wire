@@ -14,12 +14,22 @@
     --light:        #ffffff;
 }
 
+#sendButton{
+    position:relative;
+    top:2em;
+}
+
+.form-row{
+    display:flex;
+    justify-content:space-around;
+}
+
 body{
     margin: .5em;
     padding: .5em;
     background-image: url(background.jpg);
-    background-position-x: center;
-    background-attachment: fixed;
+    height:auto;
+    background-position-x:center;
 }
 .carousel-cell{
    height: 500px;
